@@ -15,16 +15,7 @@ for(let i=0; i<btn.length; i++){
         }
         else{
             var calc = this.innerHTML
-
-            if (["+", "-", "*", "/"].includes(calc)) {
-                display.style.direction = "ltr";
-            } 
-            else {
-                display.style.direction = "rtl";
-            }
-
             display.innerHTML+=calc
-
             display.scrollLeft = display.scrollWidth;
         }
     })
